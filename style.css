@@ -1,0 +1,85 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    padding: 5%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #5f2c82, #49a09d);
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .btn {
+    border: 1px solid black;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+  }
+
+  .btn:hover {
+    border-color: black;
+  }
+
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+ #question-text {
+     font-size: x-large;
+     color: antiquewhite;
+     padding: 10px;
+ }
+
+ #correct {
+     font-weight: 800;
+     color: rgb(0, 255, 255);
+     padding: 10px;
+ }
+
+ #correct-num {
+    font-weight: 800;
+    color: rgb(0, 255, 255);
+ }
+
+ #wrong {
+    font-weight: 800;
+    color: rgb(255, 115, 0);
+    padding: 10px;
+}
+
+#wrong-num {
+   font-weight: 800;
+   color: rgb(255, 115, 0);
+}
